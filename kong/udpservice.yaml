@@ -5,8 +5,10 @@ metadata:
   namespace: kong-system
 spec:
   ports:
-  - protocol: UDP
+ ports:
+  - name: ingress-controller-kong-udp
     port: 9999
+    protocol: UDP
     targetPort: 9999
   selector:
     app.kubernetes.io/component: app
