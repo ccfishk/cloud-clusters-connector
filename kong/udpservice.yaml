@@ -5,7 +5,6 @@ metadata:
   namespace: kong-system
 spec:
   ports:
- ports:
   - name: ingress-controller-kong-udp
     port: 9999
     protocol: UDP
